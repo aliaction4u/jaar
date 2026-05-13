@@ -1,0 +1,165 @@
+body{
+    
+   background:linear-gradient(to top, white, #691269,white);
+}
+
+h1{
+    top: 10px;
+    text-align : center;
+    color: rgb(136, 95, 7);
+
+
+    font-size: 40px;
+
+
+
+    animation: moveText 2s infinite alternate;
+
+
+}
+
+ds{
+
+    position:absolute;
+    left:150px;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+
+
+
+
+@keyframes moveText {
+
+    from {
+
+        transform: translateX(-20px);
+
+        color: gold;
+
+    }
+
+    to {
+
+        transform: translateX(20px);
+
+        color: rgb(139, 54, 132);
+
+    }
+
+}
+
+
+
+
+
+h2{
+    position :absolute;
+    top :320px;
+    left:50px;
+    font-style: italic;
+    font-size:25px;
+    animation:frontBack 1s ease; 
+    font-family: Arial,sans-serif;
+    font-weight: 2;
+    line-height: 1.6;
+    color: #3a2a3a;
+
+}
+@keyframes frontBack{
+    0%{transform:scale(1);}
+    50%{
+        transform :scale(1.5);
+    }
+    100%{
+        transform :scale(1);
+    }
+}
+div{
+    
+    overflow: hidden;
+    text-align: center;
+    top: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+   background-color:#4d4d4d ;
+   border-radius: 10px;
+
+ 
+}
+
+img{
+    opacity:0;
+    transform: translateY(40px) scale(0.9);
+    width: 200px
+    ;
+
+    border-radius: 20px;
+ transition: 0.6s ease;
+ animation:floatImage 2s ease ;
+}
+img:active{
+    transform:scale(1.2);
+}
+
+
+
+img.show{
+   opacity :1;
+   transform :translateY(0) scale(1);
+}
+img.show:hover{
+    
+    transform: translateY(0) scale(1.16);
+}
+
+
+
+@keyframes floatImage {
+ 0%{transform:scale(1);}
+    50%{
+        transform :scale(1.5);
+    }
+    100%{
+        transform :scale(1);
+    }
+    }
+
+.rrr{
+
+    text-align: center;
+    top: 1px;
+    background-color:#f5f5f5 ;
+    border-radius: 10px;
+}
+p{
+   
+    left: 50px;
+    color: rgb(99, 52, 80);
+   border: 20px black;
+    border-radius: 10px;
+}
+p1{
+   
+    left: 50px;
+    color: rgb(221, 8, 136);
+   border: 20px black;
+    border-radius: 10px;
+}
+.dur{
+  position: absolute;
+  top: 950px;
+  left: 30px;
+
+ 
+      background-color:#0a0a0a ;
+   border-radius: 10px;
+
+   font-family: Arial,sans-serif;
+    font-weight: 500;
+   color: aliceblue;
+   
+}
